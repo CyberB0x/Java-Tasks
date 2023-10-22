@@ -1,0 +1,32 @@
+//default equals
+        String s1 = "Hello";
+        String s2 = "HELLO";
+        String s3 = s1.toUpperCase();
+
+        System.out.println(s1.equals(s2)); //false
+        System.out.println(s1.equals(s3)); //false
+        System.out.println(s2.equals(s3)); //true
+
+        String sayHI = "Hi";
+        "Hi".equals(sayHI); //true
+
+        String hello = "hel";
+        "hello".equals(hello); //true
+
+        String hello2 = "h";
+        (hello2 + "ello").equals(hello2 + "ello"); //true
+
+        //equals with Ignore Case
+        String t1 = "Hello";
+        String t2 = "HELLO";
+        System.out.println(t1.equalsIgnoreCase(t2));//true
+
+        /*
+        you need to enter two lines from the keyboard
+        and determine whether they are the same or not.
+        */
+        Scanner console = new Scanner(System.in);
+        String a = console.nextLine();
+        String b = console.nextLine();
+        String result = a.equals(b) ? "Identically" : "Different";
+        System.out.println(result);
